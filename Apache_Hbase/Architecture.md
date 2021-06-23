@@ -28,4 +28,6 @@ There are 3 major components of HBase Architecture:
 
 
 
-- Source: https://yzhong-cs.medium.com/hbase-installation-step-by-step-guide-cb73381a7a4c
+- Source: 
+- https://yzhong-cs.medium.com/hbase-installation-step-by-step-guide-cb73381a7a4c
+- https://data-flair.training/blogs/hbase-tutorial/

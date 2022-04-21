@@ -1,13 +1,3 @@
-- Get all service state ( for namenode check which node is active / standby )
-```
-hdfs haadmin -getAllServiceState
-```
-
-- DFS Report: Report list live data node, capacity, number of block:
-```
-bin/hdfs dfsadmin -report
-```
-
 - `bootstrapStandby`:  use in case where name node lost data of namenode, namenode will not start and error is namenode is not formated. 
 This will pull data from active namenode.  After this you are able to start name node
 ```

@@ -5,7 +5,7 @@
 + Round-Robin policy
 + Available space policy
 
-#### - Step for remove disk:
+#### - Step for remove disk in datanode :
 1. Insert host into dfs.exclude
 2. refreshNodes
 3. Wait for decommission finish

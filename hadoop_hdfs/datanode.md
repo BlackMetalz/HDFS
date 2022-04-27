@@ -12,4 +12,5 @@
 4. stop data node 
 5. remove disk config in `dfs.datanode.data.dir`
 6. start data node
-7. refresh Nodes again
+7. Remove host inserted into dfs.exclude
+8. refresh Nodes again

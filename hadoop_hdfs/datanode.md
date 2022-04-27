@@ -5,12 +5,8 @@
 + Round-Robin policy
 + Available space policy
 
-#### - Step for remove disk in datanode :
+#### - Step for remove datanode :
 1. Insert host into dfs.exclude
 2. refreshNodes
 3. Wait for decommission finish
-4. stop data node 
-5. remove disk config in `dfs.datanode.data.dir`
-6. start data node
-7. Remove host inserted into dfs.exclude
-8. refresh Nodes again
+4. Done, if you want to remove host in dashboard, remove in dfs.hosts

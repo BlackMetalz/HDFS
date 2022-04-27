@@ -1,6 +1,6 @@
 ### Ref: 
 - https://data-flair.training/blogs/hadoop-hdfs-disk-balancer/#:~:text=HDFS%20Disk%20Balancer-,Disk%20Balancer%20is%20a%20command%2Dline%20tool%20introduced%20in%20Hadoop,distributes%20data%20within%20the%20DataNode.
-
+- https://docs.cloudera.com/HDPDocuments/HDP3/HDP-3.1.4/data-storage/content/diskbalancer_commands.html
 
 ## Before: 
 
@@ -11,6 +11,12 @@
 1. Plan: The plan command generates the plan for the specified DataNode
 ``` 
 hdfs diskbalancer -plan data-node-name
+```
+
+Advance: default bandwidth is 10MB/s, you may want to change it higher for faster balancer
+
+```
+hdfs diskbalancer -plan data-node-name -bandwidth 104857600 # 10 Mb = 104857600 bytes
 ```
 
 Output example:
@@ -49,7 +55,12 @@ Result: PLAN_UNDER_PROGRESS
 ```
 
 4. Cancel: Read Reference 😹
-5. Report: The report command gives a detailed report of the specified DataNodes or top DataNodes that require a disk balancer
+
+```
+hdfs diskbalancer -cancel plan_ID
+```
+
+6. Report: The report command gives a detailed report of the specified DataNodes or top DataNodes that require a disk balancer
 
 ```
 hdfs diskbalancer -report -top topnum # Run in active namenode

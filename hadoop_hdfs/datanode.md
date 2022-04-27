@@ -1,11 +1,11 @@
 ### Ref: 
 - https://data-flair.training/blogs/hadoop-hdfs-disk-balancer/
 
-- How much type for writing data when having multiple disks: 2 policies
+#### - How much type for writing data when having multiple disks: 2 policies
 + Round-Robin policy
 + Available space policy
 
-- Step for remove disk:
+#### - Step for remove disk:
 1. Insert host into dfs.exclude
 2. refreshNodes
 3. Wait for decommission finish

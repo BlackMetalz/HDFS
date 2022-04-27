@@ -1,0 +1,1 @@
+### Ref: https://data-flair.training/blogs/hadoop-hdfs-disk-balancer/#:~:text=HDFS%20Disk%20Balancer-,Disk%20Balancer%20is%20a%20command%2Dline%20tool%20introduced%20in%20Hadoop,distributes%20data%20within%20the%20DataNode.

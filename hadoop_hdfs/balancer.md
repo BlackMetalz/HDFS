@@ -1,5 +1,13 @@
 ### Ref:
 - https://docs.cloudera.com/cdp-private-cloud-base/7.1.6/scaling-namespaces/topics/hdfs-balancer-commands.html
+- https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.0/bk_hdfs-administration/content/configuring_balancer.html
+- https://community.cloudera.com/t5/Support-Questions/Help-with-exception-from-HDFS-balancer/td-p/160081
+
+### - Command example:
+```
+hdfs balancer -Ddfs.balancer.movedWinWidth=5400000 -Ddfs.balancer.moverThreads=1000 -Ddfs.balancer.dispatcherThreads=250 -Ddfs.datanode.balance.bandwidthPerSec=100000000 -Ddfs.balancer.max-size-to-move=10737418240 1>/tmp/balancer-out.log 2>/tmp/balancer-debug.log 
+```
+
 
 
 This runs the balancer with a default threshold of 10%, meaning that the script will ensure that disk usage on each DataNode differs from the overall 

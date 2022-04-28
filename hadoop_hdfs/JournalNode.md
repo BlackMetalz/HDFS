@@ -40,3 +40,7 @@ hdfs@hadoop-10-3-48-82:/opt/hadoop/etc/hadoop$ jps
 + `dfs.namenode.rpc-address.[nameservice ID].[name node ID]` - the fully-qualified RPC address for each NameNode to listen on
 + hmm. They are all in resource, i'm lazy to copy and paste it to here 😹
 
+
+### What happens when journal node data folder is gone?
+- Simply: Copy that folder from other node then start journal node again
+- Ref: https://stackoverflow.com/questions/29385067/how-to-recover-hdfs-journal-node

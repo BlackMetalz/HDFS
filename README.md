@@ -1,1 +1,2 @@
-# HBase: is a column-oriented non-relational database management system that runs on top of Hadoop Distributed File System (HDFS)
+### HDFS Ref:
+- https://www.analyticsvidhya.com/blog/2020/10/hadoop-distributed-file-system-hdfs-architecture-a-guide-to-hdfs-for-every-data-engineer/

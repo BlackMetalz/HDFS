@@ -52,4 +52,14 @@ Question: what is Hbase Cell?
 row, column, version determine 1 cell in Hbase
 ```
 
+Question: what is Hbase Region?
+- Answer:
+```
+a region consists of all the rows between the start key and the end key which are assigned to that Region
+```
 
+Question: what is Hbase Region Servers?:
+- Answer:
+```
+those Regions which we assign to the nodes in the HBase Cluster, is what we call “Region Servers”
+```

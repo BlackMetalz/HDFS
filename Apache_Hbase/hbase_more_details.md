@@ -1,6 +1,14 @@
 #### Ref:
 - https://www.onlineinterviewquestions.com/
 - https://viblo.asia/p/hbase-overview-architecture-va-data-flow-63vKj6J6K2R
+
+Question: what is DDL?
+- Answer:
+```
+Data Definition Language. DDL statements are used to create database, schema, constraints, users, tables etc.	
+Example command: CREATE, DROP, RENAME and ALTER.	
+```
+
 Question: What is NameSpace in Hbase?
 - Answer: 
 ```
@@ -43,3 +51,5 @@ Question: what is Hbase Cell?
 ```
 row, column, version determine 1 cell in Hbase
 ```
+
+

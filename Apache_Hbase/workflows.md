@@ -6,3 +6,17 @@
 - Client use read/write data operation to Region Servers after get list of region servers
 - Client rarely needs HMaster
 - while HMaster asssign region to RegionServers and check health of RegionServers 
+
+
+### 2. Hbase Regions:
+
+![image](https://user-images.githubusercontent.com/3434274/166670955-f42c10d5-2b1c-4ce5-9286-24b6298e719a.png)
+
+- Client connect with zookeeper endpoint, retrieve list of region servers
+- Regions are assigned to Region Servers
+- Table are horizontally partitioned into key ranges ( regions )
+
+
+
+### Ref:
+- https://data-flair.training/blogs/hbase-architecture/

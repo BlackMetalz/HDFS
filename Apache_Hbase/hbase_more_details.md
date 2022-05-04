@@ -58,8 +58,21 @@ Question: what is Hbase Region?
 a region consists of all the rows between the start key and the end key which are assigned to that Region
 ```
 
-Question: what is Hbase Region Servers?:
+Question: what is Hbase Region Servers?
 - Answer:
 ```
 those Regions which we assign to the nodes in the HBase Cluster, is what we call “Region Servers”
+```
+
+Question: what is Hbase meta table?
+- Answer:
+```
+META Table is a special HBase Catalog Table. Basically, it holds the location of the regions in the HBase Cluster.
+
+- It keeps a list of all Regions in the system.
+- Structure of the .META. table is as follows:
+1. Key: region start key, region id
+2. Values: RegionServer
+
+It is like a binary tree
 ```

@@ -1,15 +1,22 @@
 ### Ref:
 - https://www.projectpro.io/article/overview-of-hbase-architecture-and-its-components/295
+- https://www.geeksforgeeks.org/architecture-of-hbase/
 - 
 ### Comparision between HDFS and HBASE
-## HDFS
+#### HDFS
 - cannot handle high velocity of random writes and reads 
 - cannot change a file without completely rewriting it
-
-## HBASE
+- HDFS provides high latency operations
+- HDFS supports Write once Read Many times
+- HDFS is accessed through MapReduce jobs / YARN
+#### HBASE
 - built on top of HDFS
 - allows fast random writes and reads in an optimized way
+- HBase provides low latency access
+- HBase supports random read and writes
+- HBase is accessed through shell commands, Java API, REST, Avro or Thrift API
 
+Note – HBase is extensively used for online analytical operations, like in banking applications such as real-time data updates in ATM machines, HBase can be used
 
 ### Components of HBbase
 #### 1. HMaster:

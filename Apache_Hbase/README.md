@@ -1,3 +1,6 @@
+### Ref:
+- https://www.projectpro.io/article/overview-of-hbase-architecture-and-its-components/295
+- 
 ### Comparision between HDFS and HBASE
 ## HDFS
 - cannot handle high velocity of random writes and reads 

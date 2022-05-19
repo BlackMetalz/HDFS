@@ -10,7 +10,7 @@ snapshot 'hbase_table_name','hbase_table_snapshot_name'
 - Export Command: require run in node have yarn / mapreduce
 
 ```
-hbase org.apache.hadoop.hbase.snapshot.ExportSnapshot -snapshot hbase_table_name -copy-to hdfs://10.0.0.1:8020//apps/hbase/data -mappers 16 -copy-from hdfs://10.0.0.2:8020//apps/hbase/data
+hbase org.apache.hadoop.hbase.snapshot.ExportSnapshot -snapshot hbase_table_snapshot_name -copy-to hdfs://10.0.0.1:8020//apps/hbase/data -mappers 16 -copy-from hdfs://10.0.0.2:8020//apps/hbase/data
 ```
 
 - List Snapshot:

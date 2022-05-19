@@ -27,3 +27,13 @@ restore_snapshot 'hbase_table_snapshot_name'
 ```
 hbase org.apache.hadoop.hbase.mapreduce.Export <tablename> <outputdir> [<versions> [<starttime> [<endtime>]]]
 ```
+
+- Delete single snapshot:
+```
+delete_snapshot 'snapshotName'
+```
+
+- Delete all snapshot with pattern:
+```
+delete_all_snapshot 'table-pattern.*'
+```

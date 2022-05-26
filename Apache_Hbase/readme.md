@@ -1,6 +1,6 @@
 ### Ref:
 - https://docs.cloudera.com/HDPDocuments/HDP3/HDP-3.0.0/administration/content/hbase-ports.html
-
+- https://stackoverflow.com/questions/20230942/what-is-hbase-compaction-queue-size-at-all
 
 
 | Service | services | Port Default | Protocol | Description | Need End User Access | Configuration Parameters |

@@ -29,3 +29,13 @@ After that you will see it is state of Decomissioning. And next when it complete
 ![image](https://user-images.githubusercontent.com/3434274/164442943-15db472d-9289-4a46-b1fd-e54e75c9ef36.png)
 
 You can safety remove this node by remove it's entry in file of property `dfs.hosts`
+
+
+- Leave safe mode:
+```
+Security is off.
+
+Safe mode is ON. Resources are low on NN. Please add or free up more resourcesthen turn off safe mode manually. NOTE: If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+```
+
+If this notice appear: run as it said!

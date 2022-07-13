@@ -27,3 +27,12 @@ Remove last one and we get
 ```
 alter 'hbase_tbl_dev', { NAME => 'cf', COMPRESSION => 'SNAPPY', TTL => '2592000'}
 ```
+
+- Alter column families:
+```
+alter 'namespace:hbase_tbl_name', { NAME => 'cf', BLOOMFILTER => 'ROWCOL', TTL => 'FOREVER'}
+alter 'namespace:hbase_tbl_name', { NAME => 'cf1', BLOOMFILTER => 'ROWCOL', TTL => 'FOREVER'}
+
+```
+
+Bloomfilter: https://www.linkedin.com/pulse/bloom-filters-hbase-kuldeep-deshpande/
